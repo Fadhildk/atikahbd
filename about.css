@@ -1,0 +1,176 @@
+:root {
+    --primary-color: #ff4081;
+    --secondary-color: #3f51b5;
+    --background-color: #f0e3ff;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, var(--background-color) 0%, #ffd1dc 100%);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav h1 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+.about {
+    padding: 4rem 2rem;
+    background: url('wp5382883.webp') center/cover no-repeat fixed;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-family: 'Dancing Script', cursive;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Make items stack vertically */
+    align-items: center; /* Center the items */
+}
+
+.about-block {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 80%; /* Adjust width to keep it neat */
+    transition: transform 0.3s ease;
+}
+
+.about-block:hover {
+    transform: translateY(-5px);
+}
+
+.block-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.food-item {
+    flex: 1 1 calc(50% - 1rem); /* Adjusted width for two items per row */
+    text-align: center;
+}
+
+.food-item img {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.about-block h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.about-block ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.about-block li {
+    margin-bottom: 0.5rem;
+    color: #646363;
+}
+
+.block-description {
+    color: #666;
+    line-height: 1.6;
+}
+.hobby-item {
+    text-align:flex; /* Center the text and icon */
+    margin-bottom: 1.5rem; /* Spacing between hobby items */
+}
+
+.hobby-item img {
+    width: 250px; /* Set a fixed width for the image */
+    height: 250px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the box */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    margin-top: 0.5rem; /* Spacing between the text and image */
+}
+
+
+ {
+    .about-block {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .food-item {
+        flex: 1 1 100%;
+    }
+
+    .food-item img {
+        height: 120px; /* Adjust height for smaller screens */
+    }
+}
